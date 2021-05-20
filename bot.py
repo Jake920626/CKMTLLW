@@ -17,7 +17,7 @@ with open ( '/Users/apple/Documents/GitHub/CKMTLLW/quotes2.json' , 'r' , encodin
     quote2 = json.load(quotesfile2)
 
 #BOT初始設定
-bot = commands.Bot(command_prefix='!老師')
+bot = commands.Bot(command_prefix='!火爆')
 
 
 #確認啟動
