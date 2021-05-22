@@ -3,6 +3,11 @@ from discord import file
 from discord.ext import commands
 import json
 import random
+import os
+from dotenv import load_dotenv
+
+#載入token
+token = os.getenv("token")
 
 #載入設定
 with open ( '/Users/apple/Documents/GitHub/CKMTLLW/setting.json' , 'r' , encoding = 'utf8' ) as settingsfile:
@@ -54,4 +59,4 @@ async def 快上課(ctx):
 async def 幫幫我(ctx):
     await ctx.send(settings['help'])
 
-bot.run(settings['token'])
+bot.run(token)
